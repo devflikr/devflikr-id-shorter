@@ -1,0 +1,53 @@
+{
+    "name": "flikr-utils",
+    "version": "0.0.1",
+    "description": "Provides easy access to multiple utility packages.",
+    "main": "./dist/cjs/index.js",
+    "module": "./dist/esm/index.js",
+    "types": "./dist/esm/index.d.ts",
+    "typings": "./dist/esm/index.d.ts",
+    "scripts": {
+        "lint": "eslint . --ext .ts",
+        "prepublishOnly": "npm run compile",
+        "postpublish": "npm run clean",
+        "compile": "npm run clean && npm run compile:esm && npm run compile:cjs",
+        "compile:esm": "tsc",
+        "compile:cjs": "tsc --module commonjs --outDir dist/cjs",
+        "clean": "rimraf dist"
+    },
+    "files": [
+        "dist",
+        "LICENSE",
+        "package.json",
+        "README.md"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DevFlikr/flikr-utils"
+    },
+    "keywords": [
+        "devflikr",
+        "flikr-utils",
+        "flikridm",
+        "devflikr-utils"
+    ],
+    "author": "DevFlikr",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/DevFlikr/flikr-utils/issues"
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^6.8.0",
+        "concurrently": "^8.2.1",
+        "eslint": "^8.45.0",
+        "rimraf": "^5.0.1",
+        "typescript": "^5.1.6"
+    },
+    "peerDependencies": {
+        "uuid": "*"
+    },
+    "homepage": "https://github.com/DevFlikr/flikr-utils#readme",
+    "dependencies": {
+        "tslib": "^2.6.2"
+    }
+}

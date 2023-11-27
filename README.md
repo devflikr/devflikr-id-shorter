@@ -1,3 +1,3 @@
-# flikr-idm
+# flikr-utils
 
-IDM - ID manager. Provides easy access to multiple id management packages like uuid, id-shorter.
+Provides easy access to multiple utility packages.
