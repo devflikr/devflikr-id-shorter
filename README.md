@@ -1,2 +1,3 @@
-# devflikr-id-shorter
-Shortens MongoDB ObjectID to a more readable id. Typescript fork of @AHgPuK/id-shorter.
+# flikr-idm
+
+IDM - ID manager. Provides easy access to multiple id management packages like uuid, id-shorter.
