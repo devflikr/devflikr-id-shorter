@@ -37,17 +37,19 @@
         "url": "https://github.com/DevFlikr/flikr-utils/issues"
     },
     "devDependencies": {
+        "@types/crypto-js": "^4.2.1",
+        "@types/uuid": "^9.0.7",
         "@typescript-eslint/eslint-plugin": "^6.8.0",
         "concurrently": "^8.2.1",
         "eslint": "^8.45.0",
         "rimraf": "^5.0.1",
         "typescript": "^5.1.6"
     },
-    "peerDependencies": {
-        "uuid": "*"
-    },
     "homepage": "https://github.com/DevFlikr/flikr-utils#readme",
     "dependencies": {
-        "tslib": "^2.6.2"
+        "bson": "*",
+        "crypto-js": "*",
+        "tslib": "^2.6.2",
+        "uuid": "*"
     }
 }
